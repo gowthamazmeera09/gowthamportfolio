@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import agm from '../assets/gmm.png';
 import Aboutme from './Aboutme';
 import Skills from './Skills';
+import resume from '../assets/AZMEERA GOWTHAM RESUME FOR PORTFOLIO.pdf';
 
 import { FaFacebook, FaInstagram, FaWhatsappSquare, FaGithub, FaMailBulk, FaLinkedin } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
@@ -68,6 +69,21 @@ function Home() {
                 <SiIndeed />
               </a>
             </div>
+
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 items-center justify-center mt-8">
+              <button className="px-8 py-3 sm:px-10 sm:py-4 text-white bg-gradient-to-b from-blue-600 to-black rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                Contact Me
+              </button>
+
+              <a
+                href={resume}
+                download="AZMEERA GOWTHAMS RESUME"
+                className="px-8 py-3 sm:px-10 sm:py-4 bg-gradient-to-t from-blue-600 to-black text-white rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 text-center"
+              >
+                Download Resume
+              </a>
+            </div>
+
           </motion.div>
 
           {/* Image Section */}
