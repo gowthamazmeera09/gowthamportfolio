@@ -5,9 +5,12 @@ import agm from '../assets/gmm.png';
 import Aboutme from './Aboutme';
 import Skills from './Skills';
 
+import { FaFacebook, FaInstagram, FaWhatsappSquare, FaGithub, FaMailBulk, FaLinkedin } from "react-icons/fa";
+import { SiIndeed } from "react-icons/si";
+
 function Home() {
   return (
-    <div className=" text-white">
+    <div className=" text-white min-h-screen w-full">
       <div className="flex items-center justify-center px-4 md:px-16 pt-24">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-6xl gap-12">
 
@@ -33,6 +36,38 @@ function Home() {
               repeat={Infinity}
               className="text-blue-400 text-2xl md:text-4xl font-extrabold"
             />
+
+            {/* Social Icons */}
+            <div className="flex flex-wrap md:flex-nowrap gap-4 mt-6 justify-center md:justify-start text-3xl">
+              <a href="https://www.facebook.com/azmeera.gowtham.35" target="_blank" rel="noopener noreferrer"
+                className="hover:text-blue-600 transition-transform transform hover:scale-110">
+                <FaFacebook />
+              </a>
+              <a href="https://www.instagram.com/gowthamazmeera/" target="_blank" rel="noopener noreferrer"
+                className="hover:text-pink-500 transition-transform transform hover:scale-110">
+                <FaInstagram />
+              </a>
+              <a href="https://wa.me/916303497101" target="_blank" rel="noopener noreferrer"
+                className="hover:text-green-500 transition-transform transform hover:scale-110">
+                <FaWhatsappSquare />
+              </a>
+              <a href="https://github.com/gowthamazmeera09" target="_blank" rel="noopener noreferrer"
+                className="hover:text-gray-300 transition-transform transform hover:scale-110">
+                <FaGithub />
+              </a>
+              <a href="mailto:gowthamazmeera@gmail.com"
+                className="hover:text-red-500 transition-transform transform hover:scale-110">
+                <FaMailBulk />
+              </a>
+              <a href="https://www.linkedin.com/in/azmeera-gowtham-74983b272/" target="_blank" rel="noopener noreferrer"
+                className="hover:text-blue-400 transition-transform transform hover:scale-110">
+                <FaLinkedin />
+              </a>
+              <a href="https://profile.indeed.com/?hl=en_IN&co=IN&from=gnav-messaging--messaging-webapp" target="_blank" rel="noopener noreferrer"
+                className="hover:text-indigo-500 transition-transform transform hover:scale-110">
+                <SiIndeed />
+              </a>
+            </div>
           </motion.div>
 
           {/* Image Section */}
@@ -48,15 +83,16 @@ function Home() {
               className="rounded-[2rem] w-full h-auto object-cover"
             />
           </motion.div>
-
         </div>
       </div>
 
-      <div className="mt-36">
+      {/* About Me Section */}
+      <div className="mt-36 px-4 md:px-16">
         <Aboutme />
       </div>
 
-      <div>
+      {/* Skills Section */}
+      <div className="mt-16 px-4 md:px-16">
         <Skills />
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import { TypeAnimation } from 'react-type-animation';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 
 import html from '../assets/other/html.png';
