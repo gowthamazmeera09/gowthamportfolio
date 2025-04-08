@@ -8,6 +8,7 @@ import resume from '../assets/AZMEERA GOWTHAM RESUME FOR PORTFOLIO.pdf';
 
 import { FaFacebook, FaInstagram, FaWhatsappSquare, FaGithub, FaMailBulk, FaLinkedin } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
+import Projects from './Projects';
 
 function Home() {
   return (
@@ -110,6 +111,10 @@ function Home() {
       {/* Skills Section */}
       <div className="mt-16 px-4 md:px-16">
         <Skills />
+      </div>
+
+      <div className="mt-16 px-4 md:px-16">
+        <Projects />
       </div>
     </div>
   );
