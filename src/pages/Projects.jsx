@@ -13,15 +13,15 @@ const projects = [
     title: "Workboard.work",
     description: "A MERN-based app of workboard worker page",
     image:
-      "https://t3.ftcdn.net/jpg/04/06/91/94/240_F_406919447_kAcC5gdh1rpYlVxwMfHtUTGf24PUYSq8.jpg",
+      "https://www.workerboard.work/static/media/workboard-main-image-removebg.be8208f3afb475901af2.png",
     link: "https://www.workerboard.work/",
   },
   {
     title: "E-commerce Site",
     description: "A full-stack e-commerce website",
-    image: "/images/ecommerce.png",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKod8YpJ6xW7K--UzQ06ZzRUtGu4nRpa2Iv64_znqkQuCHqTx9Xh2jXC9qCElXe97923s&usqp=CAU",
     link: "https://ecommerce-mu-pink.vercel.app/",
-  },
+  }
 ];
 
 const ProjectCard = ({ project, index }) => {
@@ -50,7 +50,7 @@ const ProjectCard = ({ project, index }) => {
       ref={ref}
       animate={controls}
       initial={{ opacity: 0, x: -100 }}
-      className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+      className="bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 border-2 border-blue-950"
     >
       <img
         src={project.image}
@@ -76,9 +76,9 @@ const ProjectCard = ({ project, index }) => {
 const Projects = () => {
   return (
     <section className="min-h-screen py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-20">My Projects</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-10">My Projects</h2>
+        <div className="grid md:grid-cols-3 gap-14">
           {projects.map((project, idx) => (
             <ProjectCard key={idx} project={project} index={idx} />
           ))}
